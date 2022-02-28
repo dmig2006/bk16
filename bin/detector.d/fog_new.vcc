@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="7">
+<_filtersChain class_id="0" tracking_level="0" version="0">
+	<m_Chain>
+		<count>2</count>
+		<item_version>0</item_version>
+		<item>3953019170</item>
+		<item>981895574</item>
+	</m_Chain>
+</_filtersChain>
+<param class_id="2" tracking_level="0" version="0">
+	<param.m_Channels>1</param.m_Channels>
+</param>
+<param class_id="3" tracking_level="0" version="0"></param>

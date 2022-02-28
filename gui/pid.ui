@@ -1,0 +1,1620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PID</class>
+ <widget class="QDialog" name="PID">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>167</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="zonaX">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>289</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PY">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>349</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>P</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="minuY">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>442</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TittleX">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>0</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>КООРДИНАТА Х</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="zonaY">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>612</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pkffY_1">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>484</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dkffY_1">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>575</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dX">
+   <property name="geometry">
+    <rect>
+     <x>124</x>
+     <y>39</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pVX">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>39</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dvesY">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>442</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Apply">
+   <property name="geometry">
+    <rect>
+     <x>87</x>
+     <y>647</y>
+     <width>71</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pvesY">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>441</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dY">
+   <property name="geometry">
+    <rect>
+     <x>129</x>
+     <y>364</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pVY">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>364</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dkffX_1">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>252</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_IY">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>349</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>I</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MaxUX">
+   <property name="geometry">
+    <rect>
+     <x>129</x>
+     <y>62</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>MaxU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Exit">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>647</y>
+     <width>70</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PvX">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>24</y>
+     <width>21</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pv</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="minuX">
+   <property name="geometry">
+    <rect>
+     <x>119</x>
+     <y>119</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tkffX_1">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>206</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PvY">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>349</y>
+     <width>21</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pv</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DX">
+   <property name="geometry">
+    <rect>
+     <x>137</x>
+     <y>24</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>D</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PvesX">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>106</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pves</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tmlsX">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>74</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DkffX_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>238</y>
+     <width>40</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DkffX_z0</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="maxuY">
+   <property name="geometry">
+    <rect>
+     <x>121</x>
+     <y>397</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="maxuX">
+   <property name="geometry">
+    <rect>
+     <x>119</x>
+     <y>75</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tmlsY">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>397</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_IX">
+   <property name="geometry">
+    <rect>
+     <x>97</x>
+     <y>24</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>I</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PX">
+   <property name="geometry">
+    <rect>
+     <x>57</x>
+     <y>24</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>P</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tkffY_1">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>529</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DY">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>349</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>D</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pkffX_1">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>161</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pX">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>39</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MinUX">
+   <property name="geometry">
+    <rect>
+     <x>129</x>
+     <y>106</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>MinU</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dvesX">
+   <property name="geometry">
+    <rect>
+     <x>63</x>
+     <y>119</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PkffX_1">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>147</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pkff_z0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="iY">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>364</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TittleY">
+   <property name="geometry">
+    <rect>
+     <x>49</x>
+     <y>329</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>КООРДИНАТА Y</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pvesX">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>119</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="iX">
+   <property name="geometry">
+    <rect>
+     <x>84</x>
+     <y>39</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pY">
+   <property name="geometry">
+    <rect>
+     <x>49</x>
+     <y>364</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TkffX_1">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>192</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ikff_z0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DvesX">
+   <property name="geometry">
+    <rect>
+     <x>73</x>
+     <y>106</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dves</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TmlsX">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>61</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tmls</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ZonaX">
+   <property name="geometry">
+    <rect>
+     <x>59</x>
+     <y>273</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dead_Zone</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fTX">
+   <property name="geometry">
+    <rect>
+     <x>63</x>
+     <y>74</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FTX">
+   <property name="geometry">
+    <rect>
+     <x>73</x>
+     <y>60</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>fTmls</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fTY">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>397</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DkffX_2">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>237</y>
+     <width>40</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DkffX_1</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pkffX_2">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>160</y>
+     <width>39</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PkffX_2">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>146</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pkff_z1</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dkffX_2">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>251</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tkffX_2">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>205</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TkffX_2">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>191</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ikff_z1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DkffX_3">
+   <property name="geometry">
+    <rect>
+     <x>124</x>
+     <y>237</y>
+     <width>40</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DkffX_z2</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pkffX_3">
+   <property name="geometry">
+    <rect>
+     <x>121</x>
+     <y>160</y>
+     <width>39</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PkffX_3">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>146</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pkff_z2</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dkffX_3">
+   <property name="geometry">
+    <rect>
+     <x>121</x>
+     <y>251</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tkffX_3">
+   <property name="geometry">
+    <rect>
+     <x>121</x>
+     <y>205</y>
+     <width>40</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TkffX_3">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>191</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ikff_z2</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tkffY_2">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>528</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pkffY_2">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>483</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dkffY_2">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>574</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tkffY_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>528</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pkffY_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>483</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dkffY_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>574</y>
+     <width>41</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DkffY_1">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>561</y>
+     <width>40</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DkffX_z0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DkffY_3">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>560</y>
+     <width>40</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DkffX_z2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MaxUY">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>385</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>MaxU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TmlsY">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>384</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Tmls</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DvesY">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>429</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dves</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FTY">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>383</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>fTmls</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TkffY_2">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>514</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ikff_z1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PkffY_3">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>469</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pkff_z2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ZonaY">
+   <property name="geometry">
+    <rect>
+     <x>57</x>
+     <y>596</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Dead_Zone</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PvesY">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>429</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pves</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PkffY_1">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>470</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pkff_z0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TkffY_3">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>514</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ikff_z2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MinUY">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>429</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>MinU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DkffY_2">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>560</y>
+     <width>40</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DkffX_1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PkffY_2">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>469</y>
+     <width>30</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pkff_z1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_TkffY_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>515</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ikff_z0</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

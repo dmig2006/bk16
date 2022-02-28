@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigurationParameters>
+
+    <Network address_video = "127.0.0.1"
+             address       ="10.0.208.255"
+             port          ="8080">
+    </Network>
+
+</ConfigurationParameters>

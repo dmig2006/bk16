@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigurationParameters>
+
+    <JoystickParameters max_x_left    = "-32767"
+                        max_x_right   = "32767"
+                        max_y_down    = "-32767"
+                        max_y_up      = "32767"
+                        axis_x        = "0"
+                        axis_y        = "1"
+
+
+    
+                       W_CAMERA = "1"
+                       H_CAMERA = "0"
+                       T_CAMERA = "2"
+                       SHOT     = "5"  
+                       D        = "3" >
+    </JoystickParameters>
+
+
+</ConfigurationParameters>

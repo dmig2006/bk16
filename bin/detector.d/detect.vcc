@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="7">
+<_filtersChain class_id="0" tracking_level="0" version="0">
+	<m_Chain>
+		<count>2</count>
+		<item_version>0</item_version>
+		<item>510933899</item>
+		<item>3311092836</item>
+	</m_Chain>
+</_filtersChain>
+<param class_id="2" tracking_level="0" version="0">
+	<param.m_framesToLearn>100</param.m_framesToLearn>
+	<param.m_updatePeriodInFrames>200</param.m_updatePeriodInFrames>
+	<param.m_clearPeriodInFrames>200</param.m_clearPeriodInFrames>
+	<param.m_lowerThreshold>3</param.m_lowerThreshold>
+	<param.m_upperThreshold>10</param.m_upperThreshold>
+	<param.m_SegmentFG>0</param.m_SegmentFG>
+</param>
+<param class_id="3" tracking_level="0" version="0">
+	<param.m_ignoreHoles>1</param.m_ignoreHoles>
+	<param.m_calcMode>0</param.m_calcMode>
+	<param.m_drawMode>2</param.m_drawMode>
+	<param.m_featureArea>25</param.m_featureArea>
+</param>

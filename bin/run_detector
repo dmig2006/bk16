@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export LD_LIBRARY_PATH=~/lib
+pushd ~/bin/detector.d > /dev/null 2>&1
+
+while :
+do
+	./detector > /dev/null 2>&1
+done
+
+popd
+unset LD_LIBRARY_PATH

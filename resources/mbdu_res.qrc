@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="black/center.png">res/images/black/center.png</file>
+        <file alias="black/cross.png">res/images/black/cross.png</file>
+        <file alias="black/cross_shz.png">res/images/black/cross_shz.png</file>
+        <file alias="black/cross_teplo.png">res/images/black/cross_teplo.png</file>
+        <file alias="black/cross_teplo_zoom.png">res/images/black/cross_teplo_zoom.png</file>
+        <file alias="black/cross_uz.png">res/images/black/cross_uz.png</file>
+        <file alias="black/opt_range.png">res/images/black/opt_range.png</file>
+        <file alias="black/opt_shz.png">res/images/black/opt_shz.png</file>
+        <file alias="black/opt_teplo.png">res/images/black/opt_teplo.png</file>
+        <file alias="black/opt_teplo_zoom.png">res/images/black/opt_teplo_zoom.png</file>
+        <file alias="black/opt_uz.png">res/images/black/opt_uz.png</file>
+        <file alias="black/ramka_uz.png">res/images/black/ramka_uz.png</file>
+        <file alias="black/target.png">res/images/black/target.png</file>
+        <file alias="black/triangle_hor.png">res/images/black/triangle_hor.png</file>
+        <file alias="black/triangle_vert.png">res/images/black/triangle_vert.png</file>
+        <file alias="white/center.png">res/images/white/center.png</file>
+        <file alias="white/cross.png">res/images/white/cross.png</file>
+        <file alias="white/cross_shz.png">res/images/white/cross_shz.png</file>
+        <file alias="white/cross_teplo.png">res/images/white/cross_teplo.png</file>
+        <file alias="white/cross_teplo_zoom.png">res/images/white/cross_teplo_zoom.png</file>
+        <file alias="white/cross_uz.png">res/images/white/cross_uz.png</file>
+        <file alias="white/opt_range.png">res/images/white/opt_range.png</file>
+        <file alias="white/opt_shz.png">res/images/white/opt_shz.png</file>
+        <file alias="white/opt_teplo.png">res/images/white/opt_teplo.png</file>
+        <file alias="white/opt_teplo_zoom.png">res/images/white/opt_teplo_zoom.png</file>
+        <file alias="white/opt_uz.png">res/images/white/opt_uz.png</file>
+        <file alias="white/ramka_uz.png">res/images/white/ramka_uz.png</file>
+        <file alias="white/target.png">res/images/white/target.png</file>
+        <file alias="white/triangle_hor.png">res/images/white/triangle_hor.png</file>
+        <file alias="white/triangle_vert.png">res/images/white/triangle_vert.png</file>
+        <file alias="cross.png">res/images/cross.png</file>
+        <file alias="compass.png">res/images/compass.png</file>
+        <file alias="mbdu_ru.qm">res/l10n/mbdu_ru.qm</file>
+        <file>res/images/compass_taifun.png</file>
+        <file>res/images/compass_taifun_inversia.png</file>
+        <file alias="logo.png">res/images/logo.png</file>
+        <file>res/images/Moon.png</file>
+        <file>res/images/Sun.png</file>
+        <file>res/images/compass_invers.png</file>
+        <file>res/images/TOP MBDU 75.png</file>
+    </qresource>
+</RCC>

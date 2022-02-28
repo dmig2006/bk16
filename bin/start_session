@@ -1,0 +1,84 @@
+#!/bin/bash
+
+shutdown_sequence ()
+{
+	unset BINDIR
+	echo -e "\x1b[31;2mShutting Down...\x1b[0m"
+	/usr/bin/poweroff
+	exit
+}
+
+reboot_sequence ()
+{
+	unset BINDIR
+	echo -e "\x1b[33;2mRebooting...\x1b[0m"
+	/usr/bin/reboot
+	exit
+}
+
+launch_cu_program ()
+{
+	./mbdu > /dev/null 2>&1
+	if [ $? -eq 149 ]; then
+		shutdown_sequence
+	fi
+}
+
+BINDIR=~/bin
+
+trap "" INT
+
+cd $BINDIR
+
+TSC="/etc/touch/need_to_calibrate"
+if [ -f "${TSC}" -a $(cat "${TSC}") -eq 1 ]; then
+	~/bin/calibrator
+	echo "0" > "${TSC}"
+fi
+
+./run_detector &
+launch_cu_program
+
+clear
+echo ""
+
+while :
+do
+	echo -en "\x1b[36;1m>\x1b[0m"
+	read
+	case $REPLY in
+	bu15_tst)
+		echo -e "\x1b[35;1mBU Test Program\x1b[0m"
+		./bu15_tst > /dev/null 2>&1
+		;;
+	mbdu)
+		echo -e "\x1b[33;1mMain Program\x1b[0m"
+		launch_cu_program
+		;;
+	TestMode)
+		echo -e "\x1b[34;1mMovement Test\x1b[0m"
+		./motion_emulation > /dev/null 2>&1
+		;;
+	quit)
+		echo -e "\x1b[32;1mEXIT\x1b[0m"
+		break
+		;;
+	calibrator)
+		echo -e "\x1b[36mTouchscreen Calibration Program\x1b[0m"
+		calibrator
+		;;
+	poweroff)
+		shutdown_sequence
+		;;
+	reboot)
+		reboot_sequence
+		;;
+	"")
+		;;
+	*)
+		echo -e "\x1b[31;1mUnknown Command\x1b[0m"
+		;;
+	esac
+done
+
+#shutdown_sequence
